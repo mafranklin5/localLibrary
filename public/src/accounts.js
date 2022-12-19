@@ -34,7 +34,7 @@ function getBooksPossessedByAccount(account, books, authors) {
    author: {},
    borrows: {}
   };
-  const { id, title, genre, authorId, author, borrows } = book;
+  //const { id, title, genre, authorId, author, borrows } = book;
 
   borrowed.forEach((borrow) => {
    if (borrow.id === account.id && borrow.returned === false) {
